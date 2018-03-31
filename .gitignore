@@ -1,0 +1,44 @@
+# VS CODE Config #
+###############
+.vscode/
+
+# IDEA Config #
+###############
+.idea/
+
+#UBUNTU Config#
+###############
+.directory
+
+# Cmake files#
+###############
+*.o
+DRGraph
+Evaluation
+CMakeFiles/
+*.cbp
+Makefile
+cmake-build-debug/
+cmake_install.cmake
+nano.save
+
+#     txt     #
+###############
+*.txt
+!CMakeLists.txt
+!requirements.txt
+!data/dwt_419.txt
+!data/dwt_1005.txt
+!data/3elt.txt
+
+#     png     #
+###############
+*.png
+
+
+#   python    #
+###############
+build/
+!/python/
+/python/*.txt
+*.pyc
