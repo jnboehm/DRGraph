@@ -107,7 +107,7 @@ static struct PyModuleDef DRGraph =
     PyExtMethods
 };
 
-PyMODINIT_FUNC initDRGraph()
+PyMODINIT_FUNC PyInit_DRGraph()
 {
     printf("DRGraph successfully imported!\n");
     return PyModule_Create(&DRGraph);
