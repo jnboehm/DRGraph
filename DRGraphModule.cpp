@@ -98,9 +98,17 @@ static PyMethodDef PyExtMethods[] = {
     {"save", Save, METH_VARARGS, ""},
 };
 
+static struct PyModuleDef DRGraph =
+{
+    PyModuleDef_HEAD_INIT,
+    "DRGraph", /* name of module */
+    "",          /* module documentation, may be NULL */
+    -1,          /* size of per-interpreter state of the module, or -1 if the module keeps state in global variables. */
+    PyExtMethods
+};
+
 PyMODINIT_FUNC initDRGraph()
 {
     printf("DRGraph successfully imported!\n");
-    Py_InitModule("DRGraph", PyExtMethods);
+    return PyModule_Create(&DRGraph);
 }
-
